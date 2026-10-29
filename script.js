@@ -104,13 +104,13 @@ let running = true;
 //             - Change button innerHTML to "Stop"
 //             - Set running to true
 myBtn.addEventListener("click", function() {
-    if (running = true) {
+    if (running) {
         clearInterval(timer)
         myBtn.innerHTML = "Start"
         running = false
     }
     else {
-        let startTime = new Date().getTime()
+        start = new Date().getTime()
         timer = setInterval(time, 10)
         myBtn.innerHTML = "Stop"
         running = true
